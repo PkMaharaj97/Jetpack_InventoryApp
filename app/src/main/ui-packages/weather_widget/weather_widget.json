@@ -1,0 +1,294 @@
+{
+  "name": "weather_widget",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "Ww5aBt2hLbDWfwXbvC1Kde",
+    "node": "508:1523",
+    "version": "3936194268",
+    "component-id": "c233d6a3b8f7b0e0a1e7191000d18747721d87c4"
+  },
+  "default": "Weather Widget",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Weather Widget"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 1"
+      },
+      {
+        "type": "text",
+        "id": "Label1"
+      },
+      {
+        "type": "text",
+        "id": "Label2"
+      },
+      {
+        "type": "text",
+        "id": "Label3"
+      },
+      {
+        "type": "group",
+        "id": "Big/Moon cloud mid rain"
+      }
+    ],
+    "modes": {
+      "Weather Widget": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Weather Widget"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Weather Widget",
+            "is-structured": "false",
+            "children": [
+              "Rectangle 1",
+              "Label1",
+              "Label2",
+              "Label3",
+              "Big/Moon cloud mid rain"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "10.056640625"
+              }
+            },
+            "tap-handler": "$background",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "342.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "184.0"
+              }
+            },
+            "vector-content": "rectangle_1.svg"
+          },
+          {
+            "id": "Label1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "265.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "147.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$h3text",
+            "overflow": "visible",
+            "text-align": "right",
+            "text-size": "13.0",
+            "letter-spacing": "-0.07800000160932541",
+            "line-height": "1.3846153259277343",
+            "typeface": "SF Pro Text"
+          },
+          {
+            "id": "Label2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "124.0"
+              }
+            },
+            "color": {
+              "alpha": "0.6",
+              "hue": "240.0",
+              "saturation": "0.04081632653061233",
+              "value": "0.9607843137254902"
+            },
+            "annotated-text-content": "$h2text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "13.0",
+            "letter-spacing": "-0.07800000160932541",
+            "line-height": "1.3846153259277343",
+            "typeface": "SF Pro Text"
+          },
+          {
+            "id": "Label3",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "20.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "59.0"
+              }
+            },
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "$h1text",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "64.0",
+            "letter-spacing": "0.37400001287460327",
+            "line-height": "0.640625",
+            "typeface": "SF Pro Display"
+          },
+          {
+            "id": "Big/Moon cloud mid rain",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "178.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-12.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "160.0"
+              }
+            },
+            "is-structured": "false",
+            "children": "$icon",
+            "clip-content": "false"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "background": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "backgrounfForCard"
+    },
+    "h3text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "h2text": {
+      "data-type": "annotated-text-content",
+      "required": false,
+      "description": ""
+    },
+    "h1text": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "icon": {
+      "data-type": "list-item",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "Weather Widget",
+      "size": {
+        "width": 342.0,
+        "height": 184.0
+      },
+      "parameters": {
+        "h3text": "Mid Rain",
+        "h2text": {
+          "text": "H:24°  L:18°\nMontreal, Canada",
+          "annotated-text-span-list": [
+            {
+              "span-start": 0,
+              "span-length": 13,
+              "annotated-text-style": {
+                "font-weight": 400.0,
+                "text-size": 13.0,
+                "letter-spacing": -0.07800000160932541,
+                "line-height": 1.3846153259277343,
+                "typeface": "SF Pro Text"
+              }
+            },
+            {
+              "span-start": 13,
+              "span-length": 16,
+              "annotated-text-style": {
+                "font-weight": 400.0,
+                "text-size": 17.0,
+                "letter-spacing": -0.40799999237060547,
+                "line-height": 1.2941175842285155,
+                "typeface": "SF Pro Text",
+                "color": {
+                  "alpha": "1.0",
+                  "hue": "0.0",
+                  "saturation": "0.0",
+                  "value": "1.0"
+                }
+              }
+            }
+          ]
+        },
+        "h1text": "19°",
+        "icon": [
+          {
+            "type": "image",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "stroke-alignment": "center",
+            "image-content": "moon_cloud_mid_rain.png",
+            "scale": "fill"
+          }
+        ]
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
